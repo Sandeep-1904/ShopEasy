@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - ShopEasy</title>
+    <style>
+        /* Basic styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #131921;
+            color: white;
+            border-bottom: 3px solid #ff9900; /* Border strip */
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #ff9900;
+            cursor: pointer;
+        }
+        .logo:hover {
+            color: #ffcc00;
+        }
+        .search-bar-container {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar {
+            padding: 10px;
+            width: 250px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .auth-links {
+            display: flex;
+            gap: 20px;
+        }
+        .auth-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .auth-links a:hover {
+            color: #ff9900;
+        }
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo" onclick="goToHome()">ShopEasy</div>
+        
+        <!-- Search Bar -->
+        <div class="search-bar-container">
+            <input class="search-bar" type="text" id="searchInput" placeholder="Search for products..." onkeyup="checkSearch()">
+        </div>
+
+        <!-- Login and Sign Up Links -->
+        <div class="auth-links">
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Welcome to ShopEasy</h1>
+
+        <!-- Products Grid -->
+        <div class="product-container">
+            <!-- All 24 products with links to their pages -->
+            <div class="product">
+                <a href="product1.html">
+                    <img src="Image1.png" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$10.00</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product2.html">
+                    <img src="image2.png" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$20.00</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product3.html">
+                    <img src="image3.png" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>$15.00</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product4.html">
+                    <img src="https://via.placeholder.com/200" alt="Product 4">
+                    <h3>Product 4</h3>
+                    <p>$12.00</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product5.html">
+                    <img src="https://via.placeholder.com/200" alt="Product 5">
+                    <h3>Product 5</h3>
+                    <p>$18.00</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product6.html">
+                    <img src="https://via.placeholder.com/200" alt="Product 6">
+                    <h3>Product 6</h3>
+                    <p>$22.00</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product7.html">
+                    <img src="https://via.placeholder.com/200" alt="Product 7">
+                    <h3>Product 7</h3>
+                    <p>$25.00</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product8.html">
+                    <img src="https://via.placeholder.com/200" alt="Product 8">
+                    <h3>Product 8</h3>
+                    <p>$30.00</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product9.html">
+                    <img src="https://via.placeholder.com/200" alt="Product 9">
+                    <h3>Product 9</h3>
+                    <p>$35.00</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product10.html">
+                    <img src="https://via.placeholder.com/200" alt="Product 10">
+                    <h3>Product 10</h3>
+                    <p>$40.00</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product11.html">
+                    <img src="https://via.placeholder.com/200" alt="Product 11">
+                    <h3>Product 11</h3>
+                    <p>$45.00</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product12.html">
+                    <img src="https://via.placeholder.com/200" alt="Product 12">
+                    <h3>Product 12</h3>
+                    <p>$50.00</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product13.html">
+                    <img src="https://via.placeholder.com/200" alt="Product 13">
+                    <h3>Product 13</h3>
+                    <p>$55.00</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product14.html">
+                    <img src="https://via.placeholder.com/200" alt="Product 14">
+                    <h3>Product 14</h3>
+                    <p>$60.00</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product15.html">
+                    <img src="https://via.placeholder.com/200" alt="Product 15">
+                    <h3>Product 15</h3>
+                    <p>$65.00</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product16.html">
+                    <img src="https://via.placeholder.com/200" alt="Product 16">
+                    <h3>Product 16</h3>
+                    <p>$70.00</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product17.html">
+                    <img src="https://via.placeholder.com/200" alt="Product 17">
+                    <h3>Product 17</h3>
+                    <p>$75.00</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product18.html">
+                    <img src="https://via.placeholder.com/200" alt="Product 18">
+                    <h3>Product 18</h3>
+                    <p>$80.00</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product19.html">
+                    <img src="https://via.placeholder.com/200" alt="Product 19">
+                    <h3>Product 19</h3>
+                    <p>$85.00</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product20.html">
+                    <img src="https://via.placeholder.com/200" alt="Product 20">
+                    <h3>Product 20</h3>
+                    <p>$90.00</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product21.html">
+                    <img src="https://via.placeholder.com/200" alt="Product 21">
+                    <h3>Product 21</h3>
+                    <p>$10.00</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product22.html">
+                    <img src="https://via.placeholder.com/200" alt="Product 22">
+                    <h3>Product 22</h3>
+                    <p>$10.00</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product23.html">
+                    <img src="https://via.placeholder.com/200" alt="Product 23">
+                    <h3>Product 23</h3>
+                    <p>$10.00</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="product24.html">
+                    <img src="https://via.placeholder.com/200" alt="Product 24">
+                    <h3>Product 24</h3>
+                    <p>$10.00</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Search bar functionality to redirect based on product name
+        function checkSearch() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            if (searchInput === 'product 1') {
+                window.location.href = "product1.html";
+            }
+            if (searchInput === 'product 2') {
+                window.location.href = "product2.html";
+            }
+            if (searchInput === 'product 3') {
+                window.location.href = "product3.html";
+            }
+            // Add more conditions for the rest of the products
+        }
+    </script>
+</body>
+</html>
